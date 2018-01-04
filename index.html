@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <title>Corner Shops In</title>
+    <script src="node_modules/vue/dist/vue.js"></script>
+</head>
+
+<body>
+    <div id="cornershopapp">
+        <header>
+            <div>
+                {{welcomemessage}}
+            </div>
+        </header>
+
+        <div>
+            <h3>This is cornershopsin body</h3>
+            <!-- For demonstration of reverse message -->
+            <div>
+                <span>{{reversemessage}}</spa>
+                    <button @click="reversemessagemethod">Click me to reverse above text</button>
+            </div>
+
+            <!-- For demonstration of inoput fields -->
+            <div>
+                <h3>User Login Form</h3>
+                <div>
+                    <input v-model="userLoginEmail" />
+                    <br/>
+                    <span>Email Entered by User is : {{userLoginEmail}}</span>
+                    <br/>
+                    <input v-model="userLoginPassword" type="password" />
+                    <br/>
+                    <span>Password Entered by User is : {{userLoginPassword}}</span>
+                    <br/>
+                    <input type="submit" title="Sign In">
+                </div>
+                <div>
+                    <ol>
+                        <!-- Create an instance of the todo-item component -->
+                        <todo-item></todo-item>
+                    </ol>
+                </div>
+            </div>
+
+
+        </div>
+
+        <footer>
+            <div>
+                <span>{{footernote}}</span>
+            </div>
+        </footer>
+    </div>
+</body>
+
+<script src="index.js"></script>
+
+</html>
